@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		22F27953210D0FDE00273E7F /* ViewControllersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F27952210D0FDE00273E7F /* ViewControllersViewController.swift */; };
 		22FE3FA821193CB90017303D /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FB324121193A3B005C13D9 /* SwiftMessages.framework */; };
 		22FE3FA921193CB90017303D /* SwiftMessages.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22FB324121193A3B005C13D9 /* SwiftMessages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4EDD098B2721C2C6003FDA2E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDD098A2721C2C6003FDA2E /* libz.tbd */; };
+		4EDD098D2721C2CE003FDA2E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDD098C2721C2CE003FDA2E /* libc++.tbd */; };
+		4EDD099127227061003FDA2E /* callsot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDD098F27227061003FDA2E /* callsot.m */; };
 		8642F4361D5F7F540061BDCD /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642F4351D5F7F540061BDCD /* ExploreViewController.swift */; };
 		86AEDCE61D5D1DB70030232E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEDCE51D5D1DB70030232E /* AppDelegate.swift */; };
 		86AEDCE81D5D1DB70030232E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEDCE71D5D1DB70030232E /* ViewController.swift */; };
@@ -85,6 +88,15 @@
 		22774C1420B8461900813732 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		22F27952210D0FDE00273E7F /* ViewControllersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersViewController.swift; sourceTree = "<group>"; };
 		22FB323A21193A3B005C13D9 /* SwiftMessages.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftMessages.xcodeproj; path = ../SwiftMessages.xcodeproj; sourceTree = "<group>"; };
+		4E8D734C2728552D00A1EE62 /* bc_serialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bc_serialize.h; path = ../../sot/irvm/bc_serialize.h; sourceTree = "<group>"; };
+		4EDD098A2721C2C6003FDA2E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4EDD098C2721C2CE003FDA2E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4EDD098E27227060003FDA2E /* Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4EDD098F27227061003FDA2E /* callsot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = callsot.m; sourceTree = "<group>"; };
+		4EDD099027227061003FDA2E /* callsot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callsot.h; sourceTree = "<group>"; };
+		4EDD0AAE2727094F003FDA2E /* SotWebService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = SotWebService.mm; path = ../../sot/iOSsot/sotlib/sotlib/SotWebService.mm; sourceTree = "<group>"; };
+		4EDD0AAF272709AA003FDA2E /* NativeInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = NativeInterface.cpp; path = ../../sot/irvm/cpphotfix/NativeInterface.cpp; sourceTree = "<group>"; };
+		4EDD0ABA2727C32D003FDA2E /* sotvm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sotvm.cpp; path = ../../sot/irvm/vm/sotvm.cpp; sourceTree = "<group>"; };
 		8642F4351D5F7F540061BDCD /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		86AEDCE21D5D1DB70030232E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86AEDCE51D5D1DB70030232E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDD098D2721C2CE003FDA2E /* libc++.tbd in Frameworks */,
+				4EDD098B2721C2C6003FDA2E /* libz.tbd in Frameworks */,
 				22FE3FA821193CB90017303D /* SwiftMessages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +135,8 @@
 		6AB98897E817EE976DD72852 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EDD098C2721C2CE003FDA2E /* libc++.tbd */,
+				4EDD098A2721C2C6003FDA2E /* libz.tbd */,
 				22774C1420B8461900813732 /* Messages.framework */,
 			);
 			name = Frameworks;
@@ -129,10 +145,17 @@
 		86AEDCD91D5D1DB70030232E = {
 			isa = PBXGroup;
 			children = (
+				4EDD099027227061003FDA2E /* callsot.h */,
+				4EDD098F27227061003FDA2E /* callsot.m */,
 				86AEDCE41D5D1DB70030232E /* Demo */,
 				86AEDCE31D5D1DB70030232E /* Products */,
 				6AB98897E817EE976DD72852 /* Frameworks */,
 				22FB323A21193A3B005C13D9 /* SwiftMessages.xcodeproj */,
+				4EDD098E27227060003FDA2E /* Demo-Bridging-Header.h */,
+				4EDD0AAE2727094F003FDA2E /* SotWebService.mm */,
+				4EDD0AAF272709AA003FDA2E /* NativeInterface.cpp */,
+				4EDD0ABA2727C32D003FDA2E /* sotvm.cpp */,
+				4E8D734C2728552D00A1EE62 /* bc_serialize.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +199,7 @@
 				86AEDCE01D5D1DB70030232E /* Resources */,
 				22774C2520B8461A00813732 /* Embed App Extensions */,
 				22FE3FB021193CB90017303D /* Embed Frameworks */,
+				4EDD09892721C1C0003FDA2E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -200,8 +224,7 @@
 				TargetAttributes = {
 					86AEDCE11D5D1DB70030232E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 38R82CD868;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -260,6 +283,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EDD09892721C1C0003FDA2E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh /Users/sotsdk-1.0/project-script/sot_package.sh \"$SOURCE_ROOT/sotconfig.sh\" \"$SOURCE_ROOT/sotsaved/$CONFIGURATION\" Demo SwiftMessages\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86AEDCDE1D5D1DB70030232E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +316,7 @@
 				86AEDCE61D5D1DB70030232E /* AppDelegate.swift in Sources */,
 				226FA5E61F506993004CB2BC /* CountedViewController.swift in Sources */,
 				86C0ABA21D5E816600F76BD6 /* TacoDialogView.swift in Sources */,
+				4EDD099127227061003FDA2E /* callsot.m in Sources */,
 				22F27953210D0FDE00273E7F /* ViewControllersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +460,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -426,13 +472,36 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 38R82CD868;
+				DEVELOPMENT_TEAM = 5MDRX5VDLN;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.swiftkick.Demo;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"-sotmodule",
+					"$(PRODUCT_NAME)",
+					"-sotconfig",
+					"$(SRCROOT)/sotconfig.sh",
+				);
+				OTHER_LDFLAGS = (
+					"-sotmodule",
+					"$(PRODUCT_NAME)",
+					"/Users/sotsdk-1.0/libs/libsot_free.a",
+					"-sotsaved",
+					"$(SRCROOT)/sotsaved/$(CONFIGURATION)/$(CURRENT_ARCH)",
+					"-sotconfig",
+					"$(SRCROOT)/sotconfig.sh",
+				);
+				OTHER_SWIFT_FLAGS = "-sotmodule $(PRODUCT_NAME) -sotconfig $(SRCROOT)/sotconfig.sh";
+				PRODUCT_BUNDLE_IDENTIFIER = it.swiftkick.Demo111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,13 +512,36 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 38R82CD868;
+				DEVELOPMENT_TEAM = 5MDRX5VDLN;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.swiftkick.Demo;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-sotmodule",
+					"$(PRODUCT_NAME)",
+					"-sotconfig",
+					"$(SRCROOT)/sotconfig.sh",
+				);
+				OTHER_LDFLAGS = (
+					"-sotmodule",
+					"$(PRODUCT_NAME)",
+					"/Users/sotsdk-1.0/libs/libsot_web.a",
+					"-sotsaved",
+					"$(SRCROOT)/sotsaved/$(CONFIGURATION)/$(CURRENT_ARCH)",
+					"-sotconfig",
+					"$(SRCROOT)/sotconfig.sh",
+				);
+				OTHER_SWIFT_FLAGS = "-sotmodule $(PRODUCT_NAME) -sotconfig $(SRCROOT)/sotconfig.sh";
+				PRODUCT_BUNDLE_IDENTIFIER = it.swiftkick.Demo111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
