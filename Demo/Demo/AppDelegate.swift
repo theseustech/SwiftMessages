@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        let sot = CallSot()
+        sot.initSot()
+        
+        let sot1 = CallSotMessages()
+        sot1.initSot()
+        
         window?.tintColor = brandColor
         UISwitch.appearance().onTintColor = brandColor
         return true
