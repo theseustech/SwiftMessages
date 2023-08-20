@@ -14,6 +14,15 @@ let brandColor = UIColor(red: 42/255.0, green: 168/255.0, blue: 250/255.0, alpha
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    override init()
+    {
+        let sot = CallSot()
+        sot.initSot()
+        
+        let sot1 = CallSotMessage()
+        sot1.initSot()
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         window?.tintColor = brandColor

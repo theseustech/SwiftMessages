@@ -61,6 +61,7 @@ class ViewController: UITableViewController {
         let error = MessageView.viewFromNib(layout: .tabView)
         error.configureTheme(.error)
         error.configureContent(title: "Error", body: "Something is horribly wrong!")
+//        error.configureContent(title: "Error", body: "Sot is great")
         error.button?.setTitle("Stop", for: .normal)
         
         let warning = MessageView.viewFromNib(layout: .cardView)

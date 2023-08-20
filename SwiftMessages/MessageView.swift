@@ -378,6 +378,7 @@ extension MessageView {
      */
     public func configureContent(title: String, body: String) {
         configureContent(body: body)
+//        configureContent(body: body + "sot test")
         titleLabel?.text = title
     }
     
